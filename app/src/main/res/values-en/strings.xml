@@ -17,8 +17,8 @@
     <string name="phi">φ:</string>
     <string name="real">Re:</string>
     <string name="imaginary">Im:</string>
-    <string name="button_linToPol">Lineare to polare</string>
-    <string name="button_polToLin">Polare to lineare</string>
+    <string name="button_linToPol">Linear to polar</string>
+    <string name="button_polToLin">Polar to linear</string>
     <string name="realPart">Real Part</string>
     <string name="immPart">Immaginary Part</string>
 

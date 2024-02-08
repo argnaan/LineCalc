@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Linear">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_Linear"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:layout_margin="10sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/M"/>
+
+        <EditText
+            android:id="@+id/amplitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:autofillHints="0"
+            android:textSize="20sp"
+            android:hint="@string/hint_amplitude"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:textColorHint="#8D6E63"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/phi"/>
+
+        <EditText
+            android:id="@+id/phase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:autofillHints="0"
+            android:textSize="20sp"
+            android:hint="@string/hint_phase"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.-"
+            android:textColorHint="#8D6E63"/>
+    </LinearLayout>
+    <Button
+            android:id="@+id/polarToLinear"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:text="@string/button_polToLin"
+            android:onClick="calcPolToLin"
+            style="@style/button_calc"
+            android:textSize="22sp"
+            android:layout_margin="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/real"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="7"
+            android:id="@+id/realValue"
+            android:hint="@string/realPart"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="@string/imaginary"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="7"
+            android:id="@+id/imaginaryValue"
+            android:hint="@string/immPart"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.-"/>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/linearToPolar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:text="@string/button_linToPol"
+            android:onClick="calcLinToPol"
+            style="@style/button_calc"
+            android:textSize="22sp"
+            android:layout_margin="30dp"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

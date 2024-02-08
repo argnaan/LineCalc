@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EsameSoftwareTLC" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/backLight</item>
+    </style>
+
+    <style name="Theme.EsameSoftwareTLC" parent="Base.Theme.EsameSoftwareTLC" />
+
+    <style name="button_main">
+        <item name="android:backgroundTint">@color/buttonColor_light</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/buttonFont_light</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+    <style name="buttonSettings">
+        <item name="android:backgroundTint">@color/buttonSettingsColor_light</item>
+    </style>
+    <style name="button_calc">
+        <item name="android:backgroundTint">@color/buttonColor_light</item>
+    </style>
+</resources>

@@ -1,0 +1,77 @@
+<resources>
+    <!-- HomePage -->
+    <string name="app_name">Line Calc</string>
+    <string name="activity_title">Transmission Lines</string>
+    <string name="Button1">Coordinate Converter</string>
+    <string name="Button2">Secondary Parameter Calculator</string>
+    <string name="Button3">Mismatching</string>
+    <string name="Button4">Stub</string>
+    <string name="Button5">λ/4 adapter</string>
+    <string name="credits">Made by Matteo Scardovi e Andrea Argnani</string>
+
+    <!-- Polare <-> Lineare -->
+    <string name="title_activity_Linear">Complex Number Converter</string>
+    <string name="hint_amplitude">Magnitude</string>
+    <string name="hint_phase">Phase</string>
+    <string name="M">M:</string>
+    <string name="phi">φ:</string>
+    <string name="real">Re:</string>
+    <string name="imaginary">Im:</string>
+    <string name="button_linToPol">Lineare to polare</string>
+    <string name="button_polToLin">Polare to lineare</string>
+    <string name="realPart">Real Part</string>
+    <string name="immPart">Immaginary Part</string>
+
+    <!-- Parametri Secondari Linea -->
+    <string name="title_activity_Zc">Line Secondary Parameters</string>
+    <string name="hint_resistance">Resistance</string>
+    <string name="hint_conductance">Conductance</string>
+    <string name="hint_capacity">Capacity</string>
+    <string name="hint_inductance">Inductance</string>
+    <string name="hint_omega">Pulsation</string>
+    <string name="R">R [Ω/m]:</string>
+    <string name="G">G [s/m]:</string>
+    <string name="C">C [C/m]:</string>
+    <string name="L">L [H/m]:</string>
+    <string name="omega">ω [rad/s]</string>
+    <string name="button_calc">Calc</string>
+    <string name="Zc">Z<sub>C</sub></string>
+    <string name="gamma">Γ:</string>
+    <string name="alfa">α:</string>
+    <string name="beta">β</string>
+
+    <!-- Calcolo disadattamento linea-->
+
+    <string name="title_activity_disadattamento">Mismatching Parameters of loss free transmission line</string>
+    <string name="Zc_Ohm">Z<sub>C</sub> [Ω]</string>
+    <string name="ZL_Ohm">Z<sub>L</sub> [Ω]</string>
+    <string name="rho_L">ρ<sub>L</sub>:</string>
+    <string name="j">"+ j "</string>
+    <string name="RL">RL:</string>
+    <string name="ROS">ROS:</string>
+
+    <!-- Lambda quarti -->
+    <string name="title_activity_lambda_quarti">λ/4 adapter</string>
+    <string name="Rc_Ohm">R<sub>C</sub> [Ω]</string>
+    <string name="Rca">R<sub>C</sub><sup>a</sup> [Ω]</string>
+    <string name="l">L [m]</string>
+    <string name="optionMin">Adapter in a minimum section</string>
+    <string name="optionMax">Adapter in a maximum section</string>
+    <string name="lambda">λ [m]</string>
+
+    <!-- Stub -->
+    <string name="title_activity_stub">Stub sizing</string>
+    <string name="l1">D [m]</string>
+    <string name="l2">L [m]</string>
+    <string name="shortCircuit">Short circuit stub</string>
+    <string name="openCircuit">Open circuit stub</string>
+    <string name="title_activity_settings">Settings Activity</string>
+    <string name="setting_header">General Settings</string>
+    <string name="language_title">Language</string>
+    <string name="decimal_places_title">Number of significant figures</string>
+    <string name="theme_title">Theme</string>
+    <string name="settings_button">Settings</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_default">Default</string>
+</resources>

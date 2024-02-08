@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/setting_header">
+        <ListPreference
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:key="language"
+            app:title="@string/language_title"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="it"/>
+        <ListPreference
+            app:key="n_dec"
+            app:title="@string/decimal_places_title"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="4"
+            android:entries="@array/decimal_places_entries"
+            android:entryValues="@array/decimal_places_values"/>
+
+        <ListPreference
+            app:key="theme"
+            app:title="@string/theme_title"
+            app:entries="@array/theme_options_entries"
+            app:entryValues="@array/theme_options_values"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="default"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_title"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="@style/button_main"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="polarToAlgebra"
+            android:text="@string/Button1"
+            android:textAlignment="center" />
+        <Button
+            style="@style/button_main"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:onClick="calcSecParameter"
+            android:text="@string/Button2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                style="@style/button_main"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:onClick="calcDisad"
+                android:text="@string/Button3" />
+            <Button
+                style="@style/button_main"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:onClick="calcStub"
+                android:text="@string/Button4" />
+        </LinearLayout>
+        <Button
+            style="@style/button_main"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:onClick="calcLambdaQuarti"
+            android:text="@string/Button5" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:contentDescription="@string/settings_button"
+        android:onClick="openSettings"
+        style="@style/buttonSettings"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/credits"
+        android:textAlignment="center"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/link_github"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:id="@+id/link_github"/>
+</LinearLayout>
+

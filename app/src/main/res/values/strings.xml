@@ -15,55 +15,55 @@
     <string name="title_activity_Linear">Conversione Numeri Complessi</string>
     <string name="hint_amplitude">Modulo</string>
     <string name="hint_phase">Fase</string>
-    <string name="M">M:</string>
-    <string name="phi">φ:</string>
+    <string name="M" translatable="false">M:</string>
+    <string name="phi" translatable="false">φ:</string>
     <string name="real">Re:</string>
     <string name="imaginary">Im:</string>
-    <string name="button_linToPol">Da lineare a polare</string>
-    <string name="button_polToLin">Da polare a lineare</string>
+    <string name="button_linToPol">Da Lineare a Polare</string>
+    <string name="button_polToLin">Da Polare a Lineare</string>
     <string name="realPart">Parte Reale</string>
     <string name="immPart">Parte Immaginaria</string>
 
     <!-- Parametri Secondari Linea -->
-    <string name="title_activity_Zc">Parametri secondari della linea</string>
+    <string name="title_activity_Zc">Parametri Secondari della Linea</string>
     <string name="hint_resistance">Resistenza</string>
     <string name="hint_conductance">Conduttanza</string>
     <string name="hint_capacity">Capacità</string>
     <string name="hint_inductance">Induttanza</string>
     <string name="hint_omega">Pulsazione</string>
-    <string name="R">R [Ω/m]:</string>
-    <string name="G">G [s/m]:</string>
-    <string name="C">C [C/m]:</string>
-    <string name="L">L [H/m]:</string>
-    <string name="omega">ω [rad/s]</string>
+    <string name="R" translatable="false">R [Ω/m]:</string>
+    <string name="G" translatable="false">G [s/m]:</string>
+    <string name="C" translatable="false">C [C/m]:</string>
+    <string name="L" translatable="false">L [H/m]:</string>
+    <string name="omega" translatable="false">ω [rad/s]:</string>
     <string name="button_calc">Calcola</string>
-    <string name="gamma">Γ:</string>
-    <string name="alfa">α:</string>
-    <string name="beta">β</string>
+    <string name="gamma" translatable="false">Γ:</string>
+    <string name="alfa" translatable="false">α:</string>
+    <string name="beta" translatable="false">β</string>
 
     <!-- Calcolo disadattamento linea-->
 
-    <string name="title_activity_disadattamento">Calcolo parametri di disadattamento di una linea di trasmissione senza perdite</string>
-    <string name="Zc_Ohm">Z<sub>C</sub> [Ω]</string>
-    <string name="ZL_Ohm">Z<sub>L</sub> [Ω]</string>
-    <string name="rho_L">ρ<sub>L</sub>:</string>
-    <string name="j">"+ j "</string>
-    <string name="RL">RL:</string>
-    <string name="ROS">ROS:</string>
+    <string name="title_activity_disadattamento">Calcolo Parametri di Disadattamento di una Linea di Trasmissione Senza Perdite</string>
+    <string name="Zc_Ohm" translatable="false">Z<sub>C</sub> [Ω]</string>
+    <string name="ZL_Ohm" translatable="false">Z<sub>L</sub> [Ω]</string>
+    <string name="rho_L" translatable="false">ρ<sub>L</sub>:</string>
+    <string name="j" translatable="false">"+ j "</string>
+    <string name="RL" translatable="false">RL:</string>
+    <string name="ROS" translatable="false">ROS:</string>
 
     <!-- Lambda quarti -->
     <string name="title_activity_lambda_quarti">Adattatore a λ/4</string>
-    <string name="Rc_Ohm">R<sub>C</sub> [Ω]</string>
-    <string name="Rca">R<sub>C</sub><sup>a</sup> [Ω]</string>
-    <string name="l">L [m]</string>
-    <string name="optionMin">Adattatore in una sezione di minimo</string>
-    <string name="optionMax">Adattatore in una sezione di massimo</string>
-    <string name="lambda">λ [m]</string>
+    <string name="Rc_Ohm" translatable="false">R<sub>C</sub> [Ω]</string>
+    <string name="Rca" translatable="false">R<sub>C</sub><sup>a</sup> [Ω]</string>
+    <string name="l" translatable="false">L [m]</string>
+    <string name="optionMin">Adattatore in una Sezione di Minimo</string>
+    <string name="optionMax">Adattatore in una Sezione di Massimo</string>
+    <string name="lambda" translatable="false">λ [m]</string>
 
     <!-- Stub -->
     <string name="title_activity_stub">Dimensionamento Stub</string>
-    <string name="l1">D [m]</string>
-    <string name="l2">L [m]</string>
+    <string name="l1" translatable="false">D [m]</string>
+    <string name="l2" translatable="false">L [m]</string>
     <string name="shortCircuit">Stub a Cortocircuito</string>
     <string name="openCircuit">Stub a Circuito Aperto</string>
 
@@ -71,10 +71,10 @@
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="setting_header">Impostazioni generali</string>
     <string name="language_title">Lingua</string>
-    <string name="decimal_places_title">Numero di cifre significative</string>
+    <string name="decimal_places_title">Numero di Cifre Significative</string>
     <string name="theme_title">Tema</string>
     <string name="settings_button">Impostazioni</string>
-    <string name="Zc">Z<sub>C</sub></string>
+    <string name="Zc" translatable="false">Z<sub>C</sub></string>
     <string name="theme_light">Chiaro</string>
     <string name="theme_dark">Scuro</string>
     <string name="theme_default">Predefinito</string>

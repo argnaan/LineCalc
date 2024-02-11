@@ -44,8 +44,8 @@
     <!-- Calcolo disadattamento linea-->
 
     <string name="title_activity_disadattamento">Calcolo Parametri di Disadattamento di una Linea di Trasmissione Senza Perdite</string>
-    <string name="Zc_Ohm" translatable="false">Z<sub>C</sub> [Ω]</string>
-    <string name="ZL_Ohm" translatable="false">Z<sub>L</sub> [Ω]</string>
+    <string name="Zc_Ohm" translatable="false">Z<sub>C</sub> [Ω]:</string>
+    <string name="ZL_Ohm" translatable="false">Z<sub>L</sub> [Ω]:</string>
     <string name="rho_L" translatable="false">ρ<sub>L</sub>:</string>
     <string name="j" translatable="false">"+ j "</string>
     <string name="RL" translatable="false">RL:</string>
@@ -53,17 +53,17 @@
 
     <!-- Lambda quarti -->
     <string name="title_activity_lambda_quarti">Adattatore a λ/4</string>
-    <string name="Rc_Ohm" translatable="false">R<sub>C</sub> [Ω]</string>
-    <string name="Rca" translatable="false">R<sub>C</sub><sup>a</sup> [Ω]</string>
-    <string name="l" translatable="false">L [m]</string>
+    <string name="Rc_Ohm" translatable="false">R<sub>C</sub> [Ω]:</string>
+    <string name="Rca" translatable="false">R<sub>C</sub><sup>a</sup> [Ω]:</string>
+    <string name="l" translatable="false">L [m]:</string>
     <string name="optionMin">Adattatore in una Sezione di Minimo</string>
     <string name="optionMax">Adattatore in una Sezione di Massimo</string>
-    <string name="lambda" translatable="false">λ [m]</string>
+    <string name="lambda" translatable="false">λ [m]:</string>
 
     <!-- Stub -->
     <string name="title_activity_stub">Dimensionamento Stub</string>
-    <string name="l1" translatable="false">D [m]</string>
-    <string name="l2" translatable="false">L [m]</string>
+    <string name="l1" translatable="false">D [m]:</string>
+    <string name="l2" translatable="false">L [m]:</string>
     <string name="shortCircuit">Stub a Cortocircuito</string>
     <string name="openCircuit">Stub a Circuito Aperto</string>
 

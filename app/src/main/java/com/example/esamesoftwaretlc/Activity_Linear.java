@@ -19,6 +19,12 @@ public class Activity_Linear extends AppCompatActivity {
         setContentView(R.layout.activity_linear);
     }
 
+    /*
+    Calcola il numero complesso da polare a lineare
+    Prende i valori di ampiezza e fase e li trasforma in reali e immaginari
+    Mostra i risultati a schermo
+    Si sarebbe potuto fare usando la classe Complex, ma ho preferito fare i calcoli a mano
+    */
     public void calcPolToLin(View view) {
         EditText etAmplitude = (EditText) findViewById(R.id.amplitude);
         EditText etPhase = (EditText) findViewById(R.id.phase);
@@ -46,6 +52,12 @@ public class Activity_Linear extends AppCompatActivity {
         twImaginalValue.setText(String.format(Locale.US,String.format(Locale.getDefault(), "%%.%dg", n_cifr), fImaginalValue));
     }
 
+    /*
+    Calcola il numero complesso da lineare a polare
+    Prende i valori di reali e immaginari e li trasforma in ampiezza e fase
+    Mostra i risultati a schermo
+    Si sarebbe potuto fare usando la classe Complex, ma ho preferito fare i calcoli a mano
+    */
     public void calcLinToPol(View view){
         EditText etRealValue = (EditText) findViewById(R.id.realValue);
         EditText etImaginalValue = (EditText) findViewById(R.id.imaginaryValue);

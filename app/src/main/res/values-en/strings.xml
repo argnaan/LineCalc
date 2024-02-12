@@ -1,33 +1,30 @@
 <resources>
     <!-- HomePage -->
-    <string name="app_name">Line Calc</string>
     <string name="activity_title">Transmission Lines</string>
     <string name="Button1">Coordinate Converter</string>
     <string name="Button2">Secondary Parameter Calculator</string>
     <string name="Button3">Mismatching</string>
     <string name="Button4">Stub</string>
-    <string name="Button5">λ/4 adapter</string>
-    <string name="credits">Made by Matteo Scardovi e Andrea Argnani</string>
+    <string name="Button5">λ/4 Adapter</string>
+    <string name="credits">Made by Andrea Argnani and Matteo Scardovi</string>
 
     <!-- Polare <-> Lineare -->
     <string name="title_activity_Linear">Complex Number Converter</string>
     <string name="hint_amplitude">Magnitude</string>
     <string name="hint_phase">Phase</string>
-    <string name="real">Re:</string>
-    <string name="imaginary">Im:</string>
-    <string name="button_linToPol">Linear to polar</string>
-    <string name="button_polToLin">Polar to linear</string>
+    <string name="button_linToPol">Linear to Polar</string>
+    <string name="button_polToLin">Polar to Linear</string>
     <string name="realPart">Real Part</string>
     <string name="immPart">Immaginary Part</string>
 
     <!-- Parametri Secondari Linea -->
-    <string name="title_activity_Zc">Line Secondary Parameters</string>
+    <string name="title_activity_Zc">Secondary Parameter Calculator</string>
     <string name="hint_resistance">Resistance</string>
     <string name="hint_conductance">Conductance</string>
     <string name="hint_capacity">Capacity</string>
     <string name="hint_inductance">Inductance</string>
     <string name="hint_omega">Pulsation</string>
-    <string name="button_calc">Calc</string>
+    <string name="button_calc">Calculate</string>
 
     <!-- Calcolo disadattamento linea-->
 
@@ -42,7 +39,7 @@
     <string name="title_activity_stub">Stub Sizing</string>
     <string name="shortCircuit">Short Circuit Stub</string>
     <string name="openCircuit">Open Circuit Stub</string>
-    <string name="title_activity_settings">Settings Activity</string>
+    <string name="title_activity_settings">Settings</string>
     <string name="setting_header">General Settings</string>
     <string name="language_title">Language</string>
     <string name="decimal_places_title">Number of Significant Figures</string>

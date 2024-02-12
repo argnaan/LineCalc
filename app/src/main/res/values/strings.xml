@@ -1,10 +1,10 @@
 <resources>
 
-    <string name="app_name">Line Calc</string>
+    <string name="app_name" translatable="false">Line Calc</string>
     <!-- HomePage -->
     <string name="activity_title">"Linee di Trasmissione "</string>
     <string name="Button1">Convertitore Coordinate</string>
-    <string name="Button2">Calcolatore parametri secondari</string>
+    <string name="Button2">Calcolatore Parametri Secondari</string>
     <string name="Button3">Disadattamento</string>
     <string name="Button4">Stub</string>
     <string name="Button5">Adattatore a λ/4</string>
@@ -17,15 +17,15 @@
     <string name="hint_phase">Fase</string>
     <string name="M" translatable="false">M:</string>
     <string name="phi" translatable="false">φ:</string>
-    <string name="real">Re:</string>
-    <string name="imaginary">Im:</string>
+    <string name="real" translatable="false">Re:</string>
+    <string name="imaginary" translatable="false">Im:</string>
     <string name="button_linToPol">Da Lineare a Polare</string>
     <string name="button_polToLin">Da Polare a Lineare</string>
     <string name="realPart">Parte Reale</string>
     <string name="immPart">Parte Immaginaria</string>
 
     <!-- Parametri Secondari Linea -->
-    <string name="title_activity_Zc">Parametri Secondari della Linea</string>
+    <string name="title_activity_Zc">Calcolatore Parametri Secondari</string>
     <string name="hint_resistance">Resistenza</string>
     <string name="hint_conductance">Conduttanza</string>
     <string name="hint_capacity">Capacità</string>
@@ -43,8 +43,8 @@
 
     <!-- Calcolo disadattamento linea-->
 
-    <string name="title_activity_disadattamento">Calcolo Parametri di Disadattamento di una Linea di Trasmissione Senza Perdite</string>
-    <string name="Zc_Ohm" translatable="false">Z<sub>C</sub> [Ω]:</string>
+    <string name="title_activity_disadattamento">Parametri di Disadattamento di una Linea di Trasmissione Senza Perdite</string>
+    <string name="Zc_Ohm" translatable="false">Z<sub>c</sub> [Ω]:</string>
     <string name="ZL_Ohm" translatable="false">Z<sub>L</sub> [Ω]:</string>
     <string name="rho_L" translatable="false">ρ<sub>L</sub>:</string>
     <string name="j" translatable="false">"+ j "</string>
@@ -53,8 +53,8 @@
 
     <!-- Lambda quarti -->
     <string name="title_activity_lambda_quarti">Adattatore a λ/4</string>
-    <string name="Rc_Ohm" translatable="false">R<sub>C</sub> [Ω]:</string>
-    <string name="Rca" translatable="false">R<sub>C</sub><sup>a</sup> [Ω]:</string>
+    <string name="Rc_Ohm" translatable="false">R<sub>c</sub> [Ω]:</string>
+    <string name="Rca" translatable="false">R<sub>c</sub><sup>a</sup> [Ω]:</string>
     <string name="l" translatable="false">L [m]:</string>
     <string name="optionMin">Adattatore in una Sezione di Minimo</string>
     <string name="optionMax">Adattatore in una Sezione di Massimo</string>
@@ -68,13 +68,13 @@
     <string name="openCircuit">Stub a Circuito Aperto</string>
 
     <!-- Settings -->
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_settings">Impostazioni</string>
     <string name="setting_header">Impostazioni generali</string>
     <string name="language_title">Lingua</string>
     <string name="decimal_places_title">Numero di Cifre Significative</string>
     <string name="theme_title">Tema</string>
     <string name="settings_button">Impostazioni</string>
-    <string name="Zc" translatable="false">Z<sub>C</sub></string>
+    <string name="Zc" translatable="false">Z<sub>c</sub></string>
     <string name="theme_light">Chiaro</string>
     <string name="theme_dark">Scuro</string>
     <string name="theme_default">Predefinito</string>

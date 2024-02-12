@@ -3,6 +3,8 @@ package com.example.esamesoftwaretlc;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
@@ -31,6 +33,9 @@ public class SettingsActivity extends AppCompatActivity implements SharedPrefere
         }
 
         PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
+        TextView textView = findViewById(R.id.link_github);
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
+
     }
 
     @Override

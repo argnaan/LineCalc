@@ -73,17 +73,4 @@
         android:onClick="openSettings"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credits"
-        android:textAlignment="center"
-        android:textStyle="italic"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/link_github"
-        android:textAlignment="center"
-        android:textStyle="italic"
-        android:id="@+id/link_github"/>
-</LinearLayout>
+   </LinearLayout>

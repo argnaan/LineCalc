@@ -8,8 +8,6 @@
     <string name="Button3">Disadattamento</string>
     <string name="Button4">Stub</string>
     <string name="Button5">Adattatore a λ/4</string>
-    <string name="credits">Creato da Andrea Argnani e Matteo Scardovi. </string>
-    <string name="link_github" translatable="false"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Repository github</a></string>
 
     <!-- Polare <-> Lineare -->
     <string name="title_activity_Linear">Conversione Numeri Complessi</string>
@@ -78,4 +76,6 @@
     <string name="theme_light">Chiaro</string>
     <string name="theme_dark">Scuro</string>
     <string name="theme_default">Predefinito</string>
+    <string name="credits">Creato da Andrea Argnani e Matteo Scardovi</string>
+    <string name="link_github" ><a href="https://github.com/argnaan/LineCalc">Repository github</a></string>
 </resources>

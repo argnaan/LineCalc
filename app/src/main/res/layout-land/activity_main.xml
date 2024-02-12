@@ -22,7 +22,7 @@
         <Button
             style="@style/button_main"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:onClick="polarToAlgebra"
@@ -31,7 +31,7 @@
         <Button
             style="@style/button_main"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:onClick="calcSecParameter"
             android:text="@string/Button2" />
@@ -43,14 +43,14 @@
             <Button
                 style="@style/button_main"
                 android:layout_width="0dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:onClick="calcDisad"
                 android:text="@string/Button3" />
             <Button
                 style="@style/button_main"
                 android:layout_width="0dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:onClick="calcStub"
                 android:text="@string/Button4" />
@@ -58,7 +58,7 @@
         <Button
             style="@style/button_main"
             android:layout_width="300dp"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:onClick="calcLambdaQuarti"
             android:text="@string/Button5" />
     <Space
@@ -76,18 +76,6 @@
         android:onClick="openSettings"
         style="@style/buttonSettings"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/credits"
-        android:textAlignment="center"
-        android:textStyle="italic"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/link_github"
-        android:textAlignment="center"
-        android:textStyle="italic"
-        android:id="@+id/link_github"/>
+
 </LinearLayout>
 

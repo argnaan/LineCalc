@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 
         setContentView(R.layout.activity_main);
-        TextView textView = findViewById(R.id.link_github);
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     public void calcSecParameter(View view){

@@ -157,7 +157,7 @@
         <TextView
             android:id="@+id/textview_l"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textSize="20sp"/>
     </LinearLayout>
@@ -178,7 +178,7 @@
         <TextView
             android:id="@+id/textview_lstub"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textSize="20sp"/>
     </LinearLayout>

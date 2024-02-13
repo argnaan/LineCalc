@@ -14,7 +14,7 @@
     </style>
 
     <style name="buttonSettings">
-        <item name="android:backgroundTint">@color/buttonSettingsColor_dark</item>
+        <item name="android:backgroundTint">#01584A</item>
     </style>
     <style name="button_calc">
         <item name="android:backgroundTint">@color/buttonColor_dark</item>

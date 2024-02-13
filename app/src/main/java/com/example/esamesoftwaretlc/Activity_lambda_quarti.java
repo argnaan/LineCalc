@@ -1,19 +1,13 @@
 package com.example.esamesoftwaretlc;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.preference.Preference;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.util.Locale;
 
 public class Activity_lambda_quarti extends AppCompatActivity {
@@ -32,17 +26,22 @@ public class Activity_lambda_quarti extends AppCompatActivity {
     }
 
     public void calcola(View view){
+        //Lettura dei valori di Rc, Zl e Lambda
         EditText et_Rc = findViewById(R.id.Rc);
         EditText et_Zl_Re = findViewById(R.id.ZL_Re);
         EditText et_Zl_Im = findViewById(R.id.ZL_Im);
         EditText et_lambda = findViewById(R.id.lambda);
 
+        //Creazione dei complessi Zc e Zl, utili per calcoli futuri
         TextView tv_Rca = findViewById(R.id.textview_Rca);
         TextView tv_L = findViewById(R.id.textview_L);
+
+        //Ottenimento del valore degli spinner
         Spinner sp_Rc = findViewById(R.id.spinner_Rc);
         Spinner sp_Zl = findViewById(R.id.spinner_ZL);
         Spinner sp_lambda = findViewById(R.id.spinner_lambda);
 
+        //Creazione delle variabili utili per i calcoli
         double ROS, Rc, Ra, L, lambda;
         Complex rho_L;
         Rc = getFromEditText(et_Rc, sp_Rc);
@@ -50,6 +49,7 @@ public class Activity_lambda_quarti extends AppCompatActivity {
         Complex Zc = new Complex(Rc, 0);
         Complex ZL = new Complex(getFromEditText(et_Zl_Re, sp_Zl), getFromEditText(et_Zl_Im, sp_Zl));
 
+        //Calcoli
         rho_L = ZL.subtract(Zc);
         rho_L = rho_L.divide(Zc.add(ZL));
         ROS = (1 + rho_L.abs())/(1 - rho_L.abs());
@@ -62,12 +62,14 @@ public class Activity_lambda_quarti extends AppCompatActivity {
             L = (-rho_L.arg()/(4*Math.PI))*lambda;
         }
 
+        //Mostra i risultati a schermo
         SharedPreferences preferences = getSharedPreferences("com.example.esamesoftwaretlc_preferences", MODE_PRIVATE);
         int n_cifre = Integer.parseInt(preferences.getString("n_dec", "4"));
         tv_Rca.setText(String.format(Locale.getDefault(), String.format(Locale.getDefault(), "%%.%dg", n_cifre), Ra));
         tv_L.setText((String.format(Locale.getDefault(), String.format(Locale.getDefault(), "%%.%dg", n_cifre), L)));
     }
 
+    //Metodo per ottenere il valore da un EditText e dallo Spinner
     private double getFromEditText(EditText et, Spinner sp){
         if(et.getText().toString().equals("")) {
             et.setText("0");

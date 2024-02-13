@@ -27,29 +27,34 @@ public class Activity_disadattamento extends AppCompatActivity {
     }
 
     public void calc(View view){
+        //Lettura dei valori di Zc e Zl
         EditText et_Zc_Re = findViewById(R.id.Zc_Re);
         EditText et_Zc_Im = findViewById(R.id.Zc_Im);
         EditText et_ZL_Re = findViewById(R.id.ZL_Re);
         EditText et_ZL_Im = findViewById(R.id.ZL_Im);
 
+        //Creazione dei TextView
         TextView tv_rho_L = findViewById(R.id.textview_rho_L);
         TextView tv_ROS = findViewById(R.id.textview_ROS);
         TextView tv_RL = findViewById(R.id.textview_RL);
 
+        //Creazione degli spinner
         Spinner sp_Zc = findViewById(R.id.spinner_Zc);
         Spinner sp_ZL = findViewById(R.id.spinner_ZL);
 
+        //Creazione delle variabili
         Complex rho_L;
         double ROS, RL;
         Complex Zc = new Complex(getFromEditText(et_Zc_Re, sp_Zc), getFromEditText(et_Zc_Im, sp_Zc));
         Complex ZL = new Complex(getFromEditText(et_ZL_Re, sp_ZL), getFromEditText(et_ZL_Im, sp_ZL));
 
+        //Calcoli
         rho_L = ZL.subtract(Zc);
         rho_L = rho_L.divide(Zc.add(ZL));
-
         ROS = (1 + rho_L.abs())/(1 - rho_L.abs());
         RL = -20 * Math.log10(rho_L.abs());
 
+        //Impostazione dei valori nei TextView
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         int n_cifr = Integer.parseInt(preferences.getString("n_dec", "4"));
 
@@ -58,6 +63,7 @@ public class Activity_disadattamento extends AppCompatActivity {
         tv_RL.setText(String.format(Locale.getDefault(), String.format(Locale.getDefault(), "%%.%dg", n_cifr), RL));
     }
 
+    //Funzione per ottenere il valore da un EditText e da uno Spinner
     private double getFromEditText(EditText et, Spinner sp){
         if(et.getText().toString().equals("")) {
             et.setText("0");

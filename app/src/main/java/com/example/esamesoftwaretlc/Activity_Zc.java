@@ -32,30 +32,34 @@ public class Activity_Zc extends AppCompatActivity {
     }
 
     public void calc(View view) {
+        // Prendo i valori inseriti nelle EditText
         EditText et_R = findViewById(R.id.resistance);
         EditText et_G = findViewById(R.id.conductance);
         EditText et_C = findViewById(R.id.capacity);
         EditText et_L = findViewById(R.id.inductance);
         EditText et_omega = findViewById(R.id.omega);
 
+        // Prendo i valori selezionati negli Spinner
         Spinner sp_R = findViewById(R.id.spinner_resistance);
         Spinner sp_G = findViewById(R.id.spinner_conductance);
         Spinner sp_C = findViewById(R.id.spinner_capacity);
         Spinner sp_L = findViewById(R.id.spinner_inductance);
         Spinner sp_omega = findViewById(R.id.spinner_omega);
 
+        // Prendo i TextView dove inserire i risultati
         TextView tv_Zc = findViewById(R.id.textview_Zc);
         TextView tv_gamma = findViewById(R.id.textview_Gamma);
         TextView tv_alfa = findViewById(R.id.textview_alfa);
         TextView tv_beta = findViewById(R.id.textview_beta);
 
-
+        // Leggo i valori inseriti nelle EditText e negli Spinner
         double R = getFromEditText(et_R, sp_R);
         double G = getFromEditText(et_G, sp_G);
         double C = getFromEditText(et_C, sp_C);
         double L = getFromEditText(et_L, sp_L);
         double omega = getFromEditText(et_omega, sp_omega);
 
+        // Calcolo i parametri di trasmissione
         Complex Zc, gamma;
         Complex Z = new Complex(R, omega * L);
         Complex Y = new Complex(G, omega * C);
@@ -73,6 +77,7 @@ public class Activity_Zc extends AppCompatActivity {
         alfa = Math.sqrt(alfa / 2);
         beta = Math.sqrt(beta / 2);
 
+        // Scrivo i risultati nei TextView
         SharedPreferences preferences = getSharedPreferences("com.example.esamesoftwaretlc_preferences", MODE_PRIVATE);
         int n_cifr = Integer.parseInt(preferences.getString("n_dec", "4"));
 
@@ -82,6 +87,7 @@ public class Activity_Zc extends AppCompatActivity {
         tv_beta.setText(String.format(Locale.getDefault(), String.format(Locale.getDefault(), "%%.%dg \t[rad/m]", n_cifr), beta));
     }
 
+    // Metodo per leggere il valore inserito in una EditText e nel corrispondente Spinner
     private double getFromEditText(EditText et, Spinner sp){
         if(et.getText().toString().equals("")) {
             et.setText("0");

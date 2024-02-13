@@ -25,6 +25,7 @@ public class Activity_lambda_quarti extends AppCompatActivity {
         sp_lambda.setSelection(3);
     }
 
+
     public void calcola(View view){
         //Lettura dei valori di Rc, Zl e Lambda
         EditText et_Rc = findViewById(R.id.Rc);

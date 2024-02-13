@@ -9,7 +9,6 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {

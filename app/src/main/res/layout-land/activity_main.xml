@@ -9,58 +9,86 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/activity_title"
+    android:textAlignment="center"
+    android:textSize="32sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        style="@style/button_main"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="polarToAlgebra"
+        android:text="@string/Button1"
+        android:textAlignment="center" />
+
+    <Button
+        style="@style/button_main"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:onClick="calcSecParameter"
+        android:text="@string/Button2" />
+
+</LinearLayout>
+
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_title"
-        android:textAlignment="center"
-        android:textSize="32sp" />
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/button_main"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="calcDisad"
+            android:text="@string/Button3" />
+
+        <Button
+            style="@style/button_main"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="calcStub"
+            android:text="@string/Button4" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
         <Button
             style="@style/button_main"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:onClick="polarToAlgebra"
-            android:text="@string/Button1"
-            android:textAlignment="center" />
-        <Button
-            style="@style/button_main"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:onClick="calcSecParameter"
-            android:text="@string/Button2" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                style="@style/button_main"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:onClick="calcDisad"
-                android:text="@string/Button3" />
-            <Button
-                style="@style/button_main"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:onClick="calcStub"
-                android:text="@string/Button4" />
-        </LinearLayout>
-        <Button
-            style="@style/button_main"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+            android:layout_weight="2"
             android:onClick="calcLambdaQuarti"
             android:text="@string/Button5" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="0sp"
